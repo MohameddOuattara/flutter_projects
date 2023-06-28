@@ -1,26 +1,16 @@
 import 'package:flutter/material.dart';
+import 'pages/presentation.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(MonProfil());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MonProfil extends StatelessWidget {
+  const MonProfil({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        title: 'Flutter Demo',
-        home: Scaffold(
-          body: Center(
-            child: Text(
-              'Salut les codeur',
-              textAlign: TextAlign.center,
-              overflow: TextOverflow.ellipsis,
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-          ),
-        ));
+    return MaterialApp(
+    title : 'Mon profil personnel',
+    home : PagePresentation(),
+  );
   }
 }
