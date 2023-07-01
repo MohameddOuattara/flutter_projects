@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'pages/presentation.dart';
 
-void main() => runApp(MonProfil());
+void main() => runApp(const MonProfil());
 
 class MonProfil extends StatelessWidget {
   const MonProfil({super.key});
@@ -9,8 +9,8 @@ class MonProfil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    title : 'Mon profil personnel',
-    home : PagePresentation(),
-  );
+      title: 'Mon profil personnel',
+      home: PagePresentation(),
+    );
   }
 }
